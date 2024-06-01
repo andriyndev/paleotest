@@ -686,7 +686,7 @@ function paleotest.hq_aerial_mount_logic(self, prty)
             end
         end
 
-        if ctrl.sneak then
+        if ctrl.sneak and ctrl.place then
             mobkit.clear_queue_low(self)
             mobkit.clear_queue_high(self)
             mob_core.detach(self.driver, {x = -1, y = 0, z = 0})
